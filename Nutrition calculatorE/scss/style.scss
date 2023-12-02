@@ -1,0 +1,85 @@
+@import "_config";
+
+:root {
+  font-family: $font-stack;
+  background-color: $primery-color-4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/static/cute-avocado.svg"), url("/static/redish.svg"),
+    url("/static/hello-avocado.svg"), url("/static/pepper.svg"),
+    url("/static/carrot.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 92% 2%, 15% 10%, 50% 40%, 110% 75%, 10% 60%;
+}
+
+header {
+  width: 85%;
+  margin: 4em auto 1em;
+  text-align: center;
+  h1 {
+    letter-spacing: 4px;
+    font-size: 3.5rem;
+    color: $primery-color-1;
+  }
+}
+
+.landing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  width: 60%;
+  margin: 1em auto;
+  gap: 1em 3em;
+}
+
+.landing-left, .landing-right {
+  width: 90%;
+  background-color: $primery-color-2;
+  padding: 2em;
+  border-radius: 0.8em;
+  margin: 1em auto;
+  border: 2px dashed $primery-color-1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.landing-right {
+  .head {
+    font-size: 1.6rem;
+    color: darken($primery-color-1, 10%);
+  }
+  .titles {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+}
+
+.about {
+  width: 60%;
+  margin: 5em auto;
+  font-size: 1.2rem;
+  background-color: lighten($primery-color-2, 5%);
+  padding: 2em;
+  border-radius: 0.5em;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+}
+
+button {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (min-width: 2000px) {
+  .landing-right {
+    .total-result-area {
+      width: 90%;
+    }
+  }
+}

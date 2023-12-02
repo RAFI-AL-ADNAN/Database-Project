@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrition Calculator</title>
+    <link rel="stylesheet" href="/scss/style.css" />
+    <link rel="stylesheet" href="/scss/style.css.map">
+    <link rel="icon" href="/static/dish.svg" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Nutrition Calculator</h1>
+    </header>
+    <main>
+        <section class="landing">
+            <div class="landing-left">
+                <p class="head">Enter an item and a serving size</p>
+                <form class="form1">
+                    <label for="item">Item:</label>
+                    <br />
+                    <input type="text" name="item" id="item" required placeholder="e.g: banana" />
+                    <br />
+                    <label for="size">Serving Size:</label>
+                    <br />
+                    <input class="size" id="size" type="number" name="size" required placeholder="e.g: 200" /><span>gr</span>
+                    <br />
+                    <button>result</button>
+                </form>
+                <div class="result-area">
+                    <div class="protein card"><p class="title">protein</p></div>
+                    <div class="cal card"><p class="title">calories</p></div>
+                    <div class="fat card"><p class="title">fat</p></div>
+                    <button class="btn">add to calculate</button>
+                </div>
+            </div>
+            <div class="landing-right">
+                <p class="head"></p> Nutrition Data</p>
+                <div class="titles">
+                    <p>name</p>
+                    <p>serving size</p>
+                    <p>protein</p>
+                    <p>calories</p>
+                    <p>fat</p>
+                </div>
+                <div class="content"></div>
+                <div class="total">
+                    <div class="total-result-area">
+                        <div class="total-protein card"><p class="title">protein</p></div>
+                        <div class="total-cal card"><p class="title">calories</p></div>
+                        <div class="total-fat card"><p class="title">fat</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+        <h2>How it works</h2>
+        <p>
+          <b>note: the protein and the fat are calculated in grams.</b> <br />
+          First, you need to enter an item in the text area provided (item =
+          food). <br />
+          Protein and fat measurements are provided in grams. To begin, enter a food item into the designated text area. Once you've inputted the item, pressing the 'Result' button will calculate its protein, calorie, and fat content. If you wish to keep track of this item, click on the 'Add to Calculate’ button. This action will record all nutritional attributes of the item onto your virtual plate. We will soon introduce a feature allowing you to remove specific items from your plate as needed
+<br />
+          An option to remove specific item from the plate will arraive shortly.
+        </p>
+        <h3>About us</h3>
+        <p>
+          Welcome to Nutritious Calculator!
+
+Nutritious Calculator was born from a passion for health and technology, founded in 2023 with the mission of simplifying nutritional tracking for everyone. We are a vibrant team of nutritionists, tech enthusiasts, and health advocates united by the belief that understanding the nutritional content of our food should be straightforward and accessible.
+
+Our platform, Nutritious Calculator, is designed to empower individuals to make informed dietary choices with ease. By inputting any food item, users can instantly access detailed nutritional information, helping them to balance their meals more effectively.
+
+We are committed to delivering accurate and comprehensive nutritional data, leveraging advanced technology to continually update and expand our database. Our aim is to cater to a diverse range of dietary needs and preferences, making healthy eating achievable for everyone.
+
+Nutritious Calculator is more than just a tool; it’s a community-driven platform where users can find tips, share experiences, and learn from one another. We are dedicated to fostering an environment where health-conscious individuals can come together to support and inspire each other on their wellness journeys.
+
+Join us on this exciting journey towards healthier eating habits. With Nutritious Calculator, you’re not just counting nutrients; you’re taking a step towards a healthier you!
+
+Nutritious Calculator - Empowering Your Health, One Bite at a Time.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Made By Group 32 Check Out My
+        <a href="Group 32" rel="noopener" target="_blank"
+          >Github</a
+        >
+      </p>
+    </footer>
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>
+
+

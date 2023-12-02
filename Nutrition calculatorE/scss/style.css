@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  background-color: #3a5f56;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/static/cute-avocado.svg"), url("/static/redish.svg"), url("/static/hello-avocado.svg"), url("/static/pepper.svg"), url("/static/carrot.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 92% 2%, 15% 10%, 50% 40%, 110% 75%, 10% 60%;
+}
+
+header {
+  width: 85%;
+  margin: 3em auto 0;
+  text-align: center;
+}
+
+header h1 {
+  letter-spacing: 3px; 
+  font-size: 3.5rem; 
+  color: #4A7C59; 
+}
+
+.landing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  width: 60%; 
+  margin: 2em auto; 
+  gap: 1em; 
+}
+
+.landing-left, .landing-right {
+  background-color: #FFF; 
+  padding: 2em;
+  border-radius: 8px; 
+  border: 1px solid #4A7C59; 
+  margin: 0 auto;
+}
+
+.landing-left .head, .landing-right .head {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1em; 
+}
+
+.landing-left form label, .landing-right .titles p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333333; 
+}
+
+.landing-left form input[type="text"], .landing-left form input[type="number"] {
+  border-radius: 4px; 
+  border: 1px solid #6D8299; 
+  margin: 0.5em 0; 
+  width: 100%;
+  height: 2.5em; 
+  padding: 0.5em; 
+}
+
+.landing-left form button, .landing-right .total-result-area button {
+  border: none;
+  background-color: #4A7C59;
+  color: white;
+  padding: 0.5em 1em; 
+  font-size: 1.2rem;
+  border-radius: 4px; 
+  transition: background-color 0.3s; 
+}
+
+.landing-left form button:hover, .landing-right .total-result-area button:hover {
+  background-color: #3E6349; 
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (min-width: 2000px) {
+}
